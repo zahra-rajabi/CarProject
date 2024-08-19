@@ -20,7 +20,9 @@ function Category() {
         <Back />
         back
       </Link>
-
+      <h2 className="my-8 text-2xl font-medium text-lime-950">
+        Category : {category}
+      </h2>
       <section className="flex flex-wrap gap-4 my-8">
         {data.map((car) => (
           <Cart key={car.id} car={car} />
