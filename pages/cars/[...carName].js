@@ -25,7 +25,6 @@ function CarData() {
     );
   };
   const car = getCar();
-  console.log(car);
 
   return (
     <>
@@ -37,13 +36,13 @@ function CarData() {
         back
       </Link>
       <h2 className="mt-8 text-2xl font-medium">
-        {car.name} {car.model}
+        {car?.name} {car?.model}
       </h2>
       <section className="flex flex-col justify-between w-full gap-8 my-8 lg:flex-row text-lime-950 fill-lime-950 ">
         <div className="lg:w-[55%] w-full h-1/2">
           <img
-            src={car.image}
-            alt={car.name}
+            src={car?.image}
+            alt={car?.name}
             className="w-full h-full rounded-md shadow-sm"
           />
         </div>
@@ -55,28 +54,28 @@ function CarData() {
                   <Company />
                   company
                 </div>
-                <span className="text-gray-500">{car.name}</span>
+                <span className="text-gray-500">{car?.name}</span>
               </li>
               <li className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-medium">
                   <Model />
                   model
                 </div>
-                <span className="text-gray-500">{car.model}</span>
+                <span className="text-gray-500">{car?.model}</span>
               </li>
               <li className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-medium">
                   <Calender />
                   first registration
                 </div>
-                <span className="text-gray-500">{car.year}</span>
+                <span className="text-gray-500">{car?.year}</span>
               </li>
               <li className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-medium">
                   <Road />
                   kms driven
                 </div>
-                <span className="text-gray-500">{car.distance}</span>
+                <span className="text-gray-500">{car?.distance}</span>
               </li>
             </ul>
           </section>
@@ -85,12 +84,12 @@ function CarData() {
               <Location />
               <span>location</span>
             </div>
-            <span className="text-gray-500">{car.location}</span>
+            <span className="text-gray-500">{car?.location}</span>
           </section>
           <section className="px-6 py-4 mt-6 rounded-md shadow-md bg-gray-50">
             <h3 className="mb-6 text-xl font-medium">Extra Information</h3>
             <p className="mb-4 leading-relaxed text-justify text-gray-500 ">
-              {car.description}
+              {car?.description}
             </p>
           </section>
           <section className="flex items-center justify-between px-6 py-4 mt-6 rounded-md shadow-md bg-gray-50">
@@ -98,7 +97,7 @@ function CarData() {
               <Money />
               <span>Price</span>
             </div>
-            <span className="text-gray-500">$ {car.price}</span>
+            <span className="text-gray-500">$ {car?.price}</span>
           </section>
         </section>
       </section>
