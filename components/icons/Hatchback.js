@@ -1,19 +1,12 @@
 function Hatchback() {
   return (
     <svg
-      version="1.0"
-      xmlns="http://www.w3.org/2000/svg"
       width="512.000000pt"
-      className="w-7 h-7"
+      className="w-7 h-7 "
       height="512.000000pt"
       viewBox="0 0 512.000000 512.000000"
-      preserveAspectRatio="xMidYMid meet"
     >
-      <g
-        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
-        stroke="none"
-      >
+      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
         <path
           d="M2930 3539 c-505 -40 -934 -165 -1515 -443 -153 -74 -166 -78 -305
 -102 -434 -73 -795 -200 -937 -329 -103 -92 -165 -250 -167 -420 -1 -79 2 -97
