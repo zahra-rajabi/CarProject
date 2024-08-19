@@ -13,7 +13,7 @@ function Categories() {
           className="flex items-center justify-between w-full h-full gap-4 px-4 py-2 fill-lime-950 hover:fill-lime-200"
         >
           <Suv />
-          <p>Suv</p>
+          <p className="font-medium">Suv</p>
         </Link>
       </li>
       <li className="w-full transition-all duration-700 rounded-md xs:w-[47%] sm:w-[23%] md:w-1/5 bg-lime-200 hover:bg-lime-950 text-lime-950 hover:text-lime-200">
@@ -22,7 +22,7 @@ function Categories() {
           className="flex items-center justify-between w-full h-full gap-4 px-4 py-2 fill-lime-950 hover:fill-lime-200"
         >
           <Sedan />
-          <p>Sedan</p>
+          <p className="font-medium">Sedan</p>
         </Link>
       </li>
       <li className="w-full transition-all duration-700 rounded-md xs:w-[47%] sm:w-[23%] md:w-1/5 bg-lime-200 hover:bg-lime-950 text-lime-950 hover:text-lime-200">
@@ -31,7 +31,7 @@ function Categories() {
           className="flex items-center justify-between w-full h-full gap-4 px-4 py-2 fill-lime-950 hover:fill-lime-200"
         >
           <Sport />
-          <p>Sport</p>
+          <p className="font-medium">Sport</p>
         </Link>
       </li>
       <li className="w-full duration-700 rounded-md transit4ion-all xs:w-[47%] sm:w-[23%] md:w-1/5 bg-lime-200 hover:bg-lime-950 text-lime-950 hover:text-lime-200">
@@ -40,7 +40,7 @@ function Categories() {
           className="flex items-center justify-between w-full h-full gap-4 px-4 py-2 fill-lime-950 hover:fill-lime-200"
         >
           <Hatchback />
-          <p>Hatchback</p>
+          <p className="font-medium">Hatchback</p>
         </Link>
       </li>
     </ul>
