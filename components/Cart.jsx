@@ -1,8 +1,15 @@
+import Link from "next/link";
 import Location from "./icons/Location";
 
 function Cart({ car }) {
+  const carModel = car.model.split(" ").join("_");
+
   return (
-    <div className="w-full px-4 py-2 flex flex-col self-stretch rounded-md justify-between bg-white xs:w-[47%] sm:w-[31.5%] ">
+    <Link
+      href={`/cars/${car.name}/${carModel}`}
+      
+      className="w-full px-4 py-2 flex flex-col self-stretch rounded-md justify-between bg-gray-50 xs:w-[47%] sm:w-[31.5%] "
+    >
       <div className="h-4/5">
         <img
           src={car.image}
@@ -24,7 +31,7 @@ function Cart({ car }) {
           <Location /> <span>{car.location}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
